@@ -12,13 +12,18 @@ exports.findAllPeople = function(req, res) {
 	});
 };
 //GET - Return a register with specified ID
-exports.findById = function(req, res) {
+exports.findById = function(req, res){
 	//sqlModel.connect();	
 	sqlModel.query('SELECT * FROM people WHERE Folio =' + req.params.id, function(err, rows, fields) 
 	{
   		if (err) throw err;
-  		console.log('GET /clients/:Folio');
+  		console.log('GET /people/:id');
   		console.log(rows);
 	 	res.status(200).jsonp(rows);
 	});
+};
+//POST - Return a message, receive body data, body.name
+exports.say = function(req, res){
+	console.log("say saluton");
+	res.send(req.body.name);
 };
