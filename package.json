@@ -1,13 +1,15 @@
 {
-  "name": "nodejs-apirest",
+  "name": "server-nodejs-mysql-api",
   "version": "1.0.0",
-  "description": "Creacion de una api",
+  "description": "Creacion de una api de busqueda de productos",
   "main": "main.js",
-  "dependencies":{
-	"body-parser":"~1.13.2",
-	"express":"~4.13.1",
-	"method-override":"^2.1.2",
-	"mysql":"^2.12.0"    
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",
+    "install": "^0.13.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.18.1",
+    "npm": "^6.14.9"
   },
   "scripts": {
     "test": "testor"
@@ -15,6 +17,6 @@
   "keywords": [
     "apijs"
   ],
-  "author": "pakoy3k",
+  "author": "Juan Espinoza",
   "license": "GPL-3.0"
 }
